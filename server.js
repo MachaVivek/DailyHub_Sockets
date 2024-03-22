@@ -9,13 +9,13 @@ const port= 6000;
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: '*',
     methods: ['GET', 'POST'],
 }));
 
 const io= require("socket.io")(4000,{
     cors:{ 
-        origin:"http://localhost:3000"
+        origin:"*"
     }
 })
 
