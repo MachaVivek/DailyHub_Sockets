@@ -4,7 +4,6 @@ const cors = require('cors');
 const router = require('./router');
 const { addUser, removeUser, getUser, getUsersInRoom } = require('./users');
 
-
 const port= 6000;
 const app = express();
 
